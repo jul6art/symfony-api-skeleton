@@ -1,0 +1,56 @@
+parameters:
+    git_dir: .
+    bin_dir: vendor/bin
+    tasks:
+        composer:
+            file: ./composer.json
+            strict: false
+            with_dependencies: false
+            no_check_all: false
+            no_check_lock: true
+            no_check_publish: false
+            no_local_repository: false
+        git_blacklist:
+            triggered_by: ['php']
+            keywords:
+                - "die("
+                - "die;"
+                - "exit("
+                - "exit;"
+                - "var_dump("
+                - "dump("
+            whitelist_patterns: []
+            regexp_type: G
+        phpcs:
+            triggered_by: ['php']
+            standard:
+                - "PSR12"
+            severity: ~
+            error_severity: ~
+            warning_severity: 6
+            tab_width: ~
+            report: full
+            report_width: ~
+            encoding: "UTF-8"
+            whitelist_patterns:
+                - /^src\/(.*)/
+            ignore_patterns: []
+            sniffs: []
+            exclude: []
+        phplint:
+            triggered_by: ['php', 'phtml', 'php3', 'php4', 'php5']
+            exclude: ['vendor', 'var']
+            jobs: ~
+            short_open_tag: false
+            ignore_patterns: []
+        securitychecker:
+            lockfile: ./composer.lock
+            format: ~
+            end_point: ~
+            timeout: ~
+            run_always: false
+        twigcs:
+            triggered_by: ['twig']
+            path: 'src'
+            severity: 'warning'
+            ruleset: 'Allocine\Twigcs\Ruleset\Official'
