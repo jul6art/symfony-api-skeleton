@@ -14,9 +14,9 @@ services:
     _defaults:
         autowire: true      # Automatically injects dependencies in your services.
         autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
-        bind:               # defines the scalar arguments once and apply them to any service defined/created in this file
-            string $locale: '%locale%'
-            array $availableLocales: '%available_locales%'
+#        bind:               # defines the scalar arguments once and apply them to any service defined/created in this file
+#            string $defaultLocale: '%locale%'
+#            array $availableLocales: '%available_locales%'
 
     # makes classes in src/ available to be used as services
     # this creates a service per class whose id is the fully-qualified class name

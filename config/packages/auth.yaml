@@ -1,0 +1,4 @@
+services:
+
+    Jul6Art\AuthBundle\Manager\Interfaces\UserManagerInterface: '@App\Manager\UserManager'
+    Jul6Art\AuthBundle\Repository\Interfaces\UserRepositoryInterface: '@App\Repository\UserRepository'

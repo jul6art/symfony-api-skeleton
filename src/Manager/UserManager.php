@@ -2,13 +2,12 @@
 
 namespace App\Manager;
 
-use App\Repository\Traits\UserRepositoryAwareTrait;
-use Jul6Art\CoreBundle\Manager\AbstractManager;
+use Jul6Art\AuthBundle\Manager\UserManager as BaseUserManager;
 
 /**
- * Class AbstractManager
+ * Class UserManager
  */
-class UserManager extends AbstractManager
+class UserManager extends BaseUserManager
 {
-    use UserRepositoryAwareTrait;
+
 }
