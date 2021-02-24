@@ -1,8 +1,8 @@
 {
-    "name": "jul6art/autobuyer-api",
-    "description": "crypto trader bot api",
+    "name": "jul6art/symfony-api-skeleton",
+    "description": "symfony api skeleton",
     "type": "project",
-    "license": "proprietary",
+    "license": "MIT",
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
