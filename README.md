@@ -3,11 +3,11 @@
 </p>
 
 <p align="center">
-    <a href="https://github.com/devinthehood/jul6art/autobuyer-api" target="_blank"><img src="https://img.shields.io/static/v1?label=stable&message=v1+coming+soon&color=orange" alt="Version"></a>
+    <a href="https://github.com/devinthehood/jul6art/symfony-api-skeleton" target="_blank"><img src="https://img.shields.io/static/v1?label=stable&message=v1+coming+soon&color=orange" alt="Version"></a>
 </p>
 
-AUTOBUYER-API
-=============
+SYMFONY-API-SKELETON
+====================
 Symfony Application
 -------------------
 
@@ -23,7 +23,7 @@ Installation
 ------------
 
 ```console
-git clone https://github.com/jul6art/autobuyer-api.git
+git clone https://github.com/jul6art/symfony-api-skeleton.git
 ```
 
 Download the [https://github.com/dunglas/mercure/releases/tag/v0.3.3](mercure hub) depending on your operating system and install it in the root of your project. 
@@ -47,14 +47,14 @@ CORS_ALLOW_ORIGIN is the client URL and port. It can be * or a list of domains
 ADDR is the server ur and 3000 is the port for mercure server
 
 ```console
-JWT_KEY='autobuyer_app_secret_mercure_key' ADDR='localhost:3000' ALLOW_ANONYMOUS=1 CORS_ALLOWED_ORIGINS="http://admin.autobuyer.localhost" ./mercure/mercure
+JWT_KEY='symfony_app_secret_mercure_key' ADDR='localhost:3000' ALLOW_ANONYMOUS=1 CORS_ALLOWED_ORIGINS="http://admin.autobuyer.localhost" ./mercure/mercure
 ```
 
 Start server
 ------------
 
 ```console
-cd autobuyer-api
+cd symfony-api-skeleton
 symfony server:start
 ```
 
