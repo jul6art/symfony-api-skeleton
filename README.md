@@ -22,7 +22,7 @@ Requirements
 Installation
 ------------
 
-```console
+```shell
 git clone https://github.com/jul6art/symfony-api-skeleton.git
 ```
 
@@ -32,7 +32,7 @@ For each release, the assets section list operating systems implementations. The
 Generate the JWT Token
 ----------------------
 
-```console
+```shell
 mkdir -p config/jwt
 openssl genpkey -out config/jwt/private.pem -aes256 -algorithm rsa -pkeyopt rsa_keygen_bits:4096
 openssl pkey -in config/jwt/private.pem -out config/jwt/public.pem -pubout
@@ -46,14 +46,14 @@ The default token is signed with the secret key: !ChangeMe!
 CORS_ALLOW_ORIGIN is the client URL and port. It can be * or a list of domains
 ADDR is the server ur and 3000 is the port for mercure server
 
-```console
+```shell
 JWT_KEY='symfony_app_secret_mercure_key' ADDR='localhost:3000' ALLOW_ANONYMOUS=1 CORS_ALLOWED_ORIGINS="http://admin.autobuyer.localhost" ./mercure/mercure
 ```
 
 Start server
 ------------
 
-```console
+```shell
 cd symfony-api-skeleton
 symfony server:start
 ```
